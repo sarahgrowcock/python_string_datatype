@@ -59,7 +59,7 @@ print(my_first_name, my_last_name, 'is', age, 'years old')
 
 # TODO Escape characters
 #   - Print the following items (one per line) (print using variables)
-#       - possesive first name -birth year is- year of birth
+#       - possessive first name -birth year is- year of birth
 print(my_first_name + "'s birth year is " + str(my_year_of_birth))
 print(my_first_name + '\'s birth year is ' + str(my_year_of_birth))
 #       - tab last name current year
@@ -70,5 +70,11 @@ print('\n', my_last_name, current_year)
 # TODO String methods
 #   - Print the following items (one per line) (print using variables)
 #       - first name and last name in lower case
+lc_first_name = my_first_name.casefold()
+lc_last_name = my_last_name.casefold()
+print(lc_first_name, lc_last_name)
+print(my_first_name.casefold(), my_last_name.casefold())
 #       - length of last name
+print(len(my_last_name))
 #       - first name and last name all in upper case
+print(my_first_name.upper(), my_last_name.upper())
